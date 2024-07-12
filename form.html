@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form HTML</title>
+  </head>
+  <body>
+    <h1>Register Form</h1>
+    <form>
+      <!-- Input teks -->
+      <label for="name">Name</label>
+      <input type="text" placeholder="Name" id="name" />
+
+      <p>Gender</p>
+      <!-- Radio button options -->
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Male</label>
+
+      <p>List of Classes</p>
+      <!-- Select dropdown -->
+      <select id="class" name="class">
+        <option value="english">English</option>
+        <option value="math">Math</option>
+        <option value="physics">Physics</option>
+      </select>
+
+      <p>Interest</p>
+      <!-- checkbox option -->
+      <input type="checkbox" id="books" name="books" value="books" />
+      <label for="books">Books</label><br />
+      <input type="checkbox" id="music" name="music" value="music" />
+      <label for="music">Music</label><br />
+      <input type="checkbox" id="movies" name="movies" value="movies" />
+      <label for="movies">Movies</label>
+    </form>
+  </body>
+</html>
