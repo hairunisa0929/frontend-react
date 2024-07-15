@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Tailwind</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom config tailwind, bisa mengcustom warna, font, dan lainnya -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#45C4F4",
+            },
+            fontFamily: {
+              display: ["Poetsen One"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style type="text/tailwindcss">
+      @layer components {
+        /* membuat class custom btn-primary untuk dapat digunakan berulang */
+        .btn-primary {
+          @apply bg-sky-500 hover:bg-sky-700 px-5 py-2 text-sm leading-5 rounded-full font-semibold text-white;
+        }
+      }
+    </style>
+
+    <!-- import font family -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- menggunakan custom font -->
+    <h1 class="text-primary font-display text-2xl">
+      Whereas disregard and contempt for human rights have resulted
+    </h1>
+    <!-- menggunakan custom class yang sudah dibuat -->
+    <button class="btn-primary">Login</button>
+    <!-- custom size dan color menggunakan arbitrary values -->
+    <div class="p-[8px] bg-[#bada55]">Hello World</div>
+  </body>
+</html>
