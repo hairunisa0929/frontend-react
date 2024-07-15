@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Properties</title>
+
+    <style>
+      div.fixed {
+        position: fixed;
+        border: 3px solid #73ad21;
+        background-color: blanchedalmond;
+        z-index: 1;
+      }
+      div.static {
+        position: static;
+        left: 70px;
+        border: 3px solid #73ad21;
+      }
+      div.relative {
+        position: relative;
+        left: 50px;
+        border: 3px solid #73ad21;
+      }
+      div.sticky {
+        position: sticky;
+        top: 0;
+        border: 3px solid rgb(84, 18, 104);
+        background-color: blueviolet;
+        color: white;
+      }
+
+      p {
+        font-size: 32px;
+      }
+
+      div.relative-el {
+        position: relative;
+        width: 400px;
+        height: 200px;
+        border: 3px solid #73ad21;
+      }
+
+      div.absolute-el {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73ad21;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fixed"><h1>This div element has position: fixed;</h1></div>
+
+    <!-- <div class="static">This element has position: static.</div> -->
+    <!-- <div class="relative">This div element has position: relative;</div> -->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam maximus
+        ligula quis iaculis vehicula. Morbi et volutpat ligula. Nullam at ante
+        at odio scelerisque tincidunt vitae eget diam. Praesent lorem justo,
+        malesuada in dui vitae, scelerisque scelerisque neque. Proin in dui
+        pellentesque, posuere magna non, viverra nisl. Maecenas in semper felis.
+        Aenean ac nisi eu risus luctus auctor. Donec et erat sit amet libero
+        imperdiet mollis at non quam. Quisque rutrum efficitur congue. Integer
+        euismod sagittis erat, eget ullamcorper augue convallis sed. Praesent
+        vel risus iaculis, vulputate ante in, luctus dui. Aliquam sollicitudin
+        consectetur ultrices.
+      </p>
+      <div class="sticky"><h3>This div element has position: sticky;</h3></div>
+      <p>
+        Vestibulum sapien nibh, eleifend eget neque non, mollis pharetra orci.
+        Nullam dictum vestibulum nisi, eu tempus ipsum sollicitudin sed. Donec
+        porta pretium nunc, quis vulputate libero imperdiet vehicula. Vivamus
+        tristique nulla est, ac pulvinar massa suscipit nec. Nunc lorem erat,
+        sodales eu ultrices facilisis, auctor eget lorem. Donec ut faucibus
+        urna, non pellentesque nisl. Mauris vitae eleifend lectus. Mauris
+        maximus facilisis tellus, vel sodales risus tristique ut. Praesent quis
+        lacinia risus. Nullam viverra arcu lectus, vitae dapibus mi tempor at.
+      </p>
+
+      <p>
+        Nunc ut ex eu lorem volutpat commodo. Vivamus ornare diam ipsum, id
+        varius mauris commodo mattis. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Aliquam commodo
+        convallis tristique. Nunc sed sem scelerisque leo varius egestas sit
+        amet vel diam. Integer at dui purus. Nunc luctus sollicitudin neque
+        facilisis hendrerit. Donec vel dui sed erat aliquam ultrices.
+        Pellentesque ut felis malesuada turpis efficitur aliquam sit amet eget
+        diam. Maecenas nec libero non felis tincidunt dapibus et ac justo. Donec
+        vitae massa sodales, hendrerit urna at, euismod lectus. Sed tempor non
+        metus quis cursus. Integer eu orci id neque fringilla maximus at et
+        eros. Morbi ultrices tortor eget egestas porta. Integer feugiat vitae
+        mauris vitae dignissim. Pellentesque sit amet lectus et magna tincidunt
+        placerat. Nulla varius metus eu ultrices elementum. Fusce quis
+        consectetur nibh. Nullam at ligula est. Donec eleifend consectetur
+        molestie. Sed enim massa, porta ac tempor vel, interdum sed sapien.
+      </p>
+    </div>
+
+    <!-- relative element -->
+    <div class="relative-el">
+      This div element has position: relative;
+      <!-- absoulte element -->
+      <div class="absolute-el">This div element has position: absolute;</div>
+    </div>
+  </body>
+</html>
