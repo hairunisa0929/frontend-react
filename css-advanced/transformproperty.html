@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+
+    <style>
+      div {
+        margin-left: 30px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid gray;
+        font-size: 20px;
+        transition: transform 3s ease-in-out 2s;
+      }
+
+      div:hover {
+        /* bergeser ke kanan sebesar 30px dan bergeser ke bawah sebesar 40px */
+        transform: rotate(45deg);
+        /* background-color: blue; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contoh Transform</h1>
+    <div></div>
+  </body>
+</html>

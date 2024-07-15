@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title Website</title>
+
+    <style>
+      body {
+        font-family: Helvetica;
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgb(231, 231, 231);
+        padding-left: 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+      }
+
+      nav > a {
+        font-weight: 600;
+        color: black;
+        text-decoration: none;
+      }
+
+      article {
+        display: flex;
+        justify-content: center;
+      }
+
+      article > div > section {
+        width: 1000px;
+      }
+
+      .content-image {
+        display: flex;
+        align-self: center;
+        border: 1px solid grey;
+        padding: 10px;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        border-top: 1px solid rgb(231, 231, 231);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.svg" alt="logo" width="50" />
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Pages</a>
+        <a href="#">About</a>
+      </nav>
+      <div></div>
+    </header>
+    
+    <main>
+      <article>
+        <div>
+          <h2>British Shorthair</h2>
+          <div class="content-image">
+            <img
+              src="brit-cat.jpg"
+              alt="british shorthair"
+              width="980"
+              height="350"
+              style="object-fit: cover"
+            />
+          </div>
+          <section style="display: flex;">
+            <div>
+              <h3>Introduction</h3>
+              <p>
+                The British Shorthair is the pedigreed version of the traditional
+                British domestic cat, with a distinctively stocky body, thick
+                coat, and broad face. The most familiar colour variant is the
+                "British Blue", with a solid grey-blue coat, pineapple eyes, and a
+                medium-sized tail. The breed has also been developed in a wide
+                range of other colours and patterns, including tabby and
+                colourpoint. It is one of the most ancient cat breeds known. In
+                modern times, it remains the most popular pedigreed breed in its
+                native country, as registered by the UK's Governing Council of the
+                Cat Fancy (GCCF). A quarter of all kittens registered with the
+                GCCF each year are British Shorthairs, making the British the most
+                popular pedigree cat in the UK.
+              </p>
+            </div>
+            <aside>
+              <div style="border: 1px solid gray; padding: 5px; margin-top: 10px">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/British_blue_close_up.jpg/330px-British_blue_close_up.jpg"
+                  alt="cat"
+                  width="200"
+                />
+                <p style="font-size: 12px">
+                  A young British Blue male showing the copper eyes typical of
+                  cats with 'blue' fur
+                </p>
+              </div>
+            </aside>
+          </section>
+  
+          <section>
+            <h3>History</h3>
+            <p>
+              The origins of the British Shorthair most likely date back to the
+              first century AD, making it one of the most ancient identifiable cat
+              breeds in the world. These cats were imported by the Romans who kept
+              them to keep the camps clear of snakes, mice and insects.
+            </p>
+          </section>
+        </div>
+      </article>
+    </main>
+
+
+    <footer><span>Copyright © 2024</span></footer>
+  </body>
+</html>

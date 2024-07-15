@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+
+    <style>
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+      }
+
+      nav {
+        align-self: center;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .cards-container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .card {
+        padding: 10px;
+        border: 1px solid gray;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+      }
+
+      .card > img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card > span {
+        font-weight: 600;
+        text-align: center;
+      }
+
+      /* view for phone */
+      @media screen and (max-width: 768px) {
+        header {
+          justify-content: center;
+        }
+
+        h1 {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Gallery</h1>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/">About</a>
+        <a href="/">Contact Us</a>
+      </nav>
+    </header>
+    <section class="cards-container">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1554396133-3ff490ac1c6d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJpdGlzaCUyMHNob3J0aGFpcnxlbnwwfHwwfHx8MA%3D%3D"
+          alt="foto-1"
+        />
+        <span>British Shorthair</span>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1595433708220-3aa013e5e43f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2NvdHRpc2glMjBmb2xkfGVufDB8fDB8fHww"
+          alt="foto-2"
+        />
+        <span>Scottish Fold</span>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1615161625133-0fd9282ddfd3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cnVzc2lhbiUyMGJsdWV8ZW58MHx8MHx8fDA%3D"
+          alt="foto-3"
+        />
+        <span>Russian Blue</span>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1633894660288-003802421573?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhZ2RvbGwlMjBjYXR8ZW58MHx8MHx8fDA%3D"
+          alt="foto-4"
+        />
+        <span>Ragdoll</span>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1645996598279-4381636a4155?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c25vd3Nob2UlMjBjYXR8ZW58MHx8MHx8fDA%3D"
+          alt="foto-5"
+        />
+        <span>Snowshoe</span>
+      </div>
+    </section>
+  </body>
+</html>
