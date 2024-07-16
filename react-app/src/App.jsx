@@ -1,67 +1,31 @@
+import Places from "./components/Places";
+
+const places = [
+  {
+    id: 1,
+    name: "Beach",
+    city: "Lombok",
+    description:
+      "a landform alongside a body of water which consists of loose particles. ",
+    img: "https://www.novo-monde.com/app/uploads/2023/03/pink-beach-lombok-1024x680.jpg",
+    price: 50000,
+  },
+  {
+    id: 2,
+    name: "Mountain",
+    city: "Dieng",
+    description:
+      "elevated portion of the Earth's crust, generally with steep sides that show significant exposed bedrock.",
+    img: "https://tanijiwo.com/wp-content/uploads/2018/06/Sunrise-Mount-Prau-by-Ade-Chrisnadhi-1280x853.jpg",
+    price: 60000,
+  },
+];
+
 function App() {
-  const name = "Pikachu";
-  const imgUrl =
-    "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/025.png";
-
-  const isLoggedIn = true;
-
-  // curly braces for showing text and modifying attribute
-  // return (
-  //   <div>
-  //     <p>Hello, my name is {name}</p>
-  //     <img src={imgUrl} alt="pikachu" />
-  //   </div>
-  // );
-
-  // conditional if else
-  // if (isLoggedIn) {
-  //   return <h1 className="text-2xl font-bold">Hello {name}!</h1>;
-  // } else {
-  //   return <h1 className="text-2xl font-bold">Please login</h1>;
-  // }
-
-  // conditional rendering with ternary operator
-  // return (
-  //   <>
-  //     {isLoggedIn ? (
-  //       <h1 className="text-2xl font-bold">Hello {name}!</h1>
-  //     ) : (
-  //       <h1 className="text-2xl font-bold">Please login</h1>
-  //     )}
-  //   </>
-  // )
-
-  // conditional rendering with logical operator
-  const messages = [
-    {
-      id: 1,
-      subject: "Hello World",
-    },
-    {
-      id: 2,
-      subject: "Good bye world",
-    },
-    {
-      id: 3,
-      subject: "What's up, world?",
-    },
-  ];
-
   return (
-    <>
-      {/* saat array messages bukan array kosong maka akan merender komponen untuk menampilkan messagenya */}
-      {messages.length > 0 && (
-        <>
-          <h2 className="mb-2 font-bold">
-            You have {messages.length} unread messages.
-          </h2>
-
-          {messages.map((message) => (
-            <p key={message.id}>{message.subject}</p>
-          ))}
-        </>
-      )}
-    </>
+    <div className="p-8">
+      <Places places={places} />
+    </div>
   );
 }
 
