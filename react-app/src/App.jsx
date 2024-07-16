@@ -1,4 +1,8 @@
+import Counter from "./components/Counter";
 import Places from "./components/Places";
+import TodoList from "./components/ToDoList";
+import UpdateAge from "./components/UpdateAge";
+import User from "./components/User";
 
 const places = [
   {
@@ -24,7 +28,11 @@ const places = [
 function App() {
   return (
     <div className="p-8">
-      <Places places={places} />
+      {/* <Places places={places} /> */}
+      {/* <User /> */}
+      {/* <Counter /> */}
+      {/* <UpdateAge /> */}
+      <TodoList />
     </div>
   );
 }
