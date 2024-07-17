@@ -2,7 +2,7 @@ import "./style.css";
 
 function Card({ name, image, city }) {
   function onClickButton(placeName) {
-    alert(`${placeName} is clicked`);
+    alert(placeName + " is clicked!");
   }
 
   return (
@@ -17,7 +17,7 @@ function Card({ name, image, city }) {
 
         <button
           className="btn item"
-          // onClick={() => alert(`${name} is clicked`)}
+          // onClick={() => alert(name + " is clicked!")}
           // onClick={onClickButton}
           onClick={() => onClickButton(name)}
         >
